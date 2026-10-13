@@ -24,6 +24,48 @@
 //     }
 //     sum += points;
 // }
-// Console.WriteLine($"Сумма баллов за сданные работы: {sum}");
+//  Console.WriteLine($"Сумма баллов за сданные работы: {sum}");
 
 
+
+// int[] groupIds = { 101, 104, 107, 104, 110 };
+// bool hasDuplicates = false;
+
+// for (int i = 0; i < groupIds.Length; i++) {
+//     for (int j = i + 1; j < groupIds.Length; j++) {
+//         if (groupIds[i] == groupIds[j]) {
+//             hasDuplicates = true;
+//             Console.WriteLine($"Найдены совпадающие номера: {groupIds[i]} и {groupIds[j]}");
+//             break;
+//         }
+//     }
+//     if (hasDuplicates) {
+//         break;
+//     }
+// }
+
+// Console.WriteLine(hasDuplicates ? "Есть повторяющиеся номера" : "Все номера уникальны");
+
+
+int days = 5;
+int lessonsPerDay = 6;
+bool found = false;
+for (int day = 1; day <= days && !found; day++)
+{
+    for (int lesson = 1; lesson <= lessonsPerDay; lesson++)
+    {
+        bool isFree = (day == 3 && lesson == 4);
+
+        if (isFree)
+        {
+            Console.WriteLine($"Свободный слот: день {day}, урок {lesson}");
+            found = true;
+            break;
+        }
+    }
+}
+
+if (!found)
+{
+    Console.WriteLine("Свободных слотов нет");
+}
