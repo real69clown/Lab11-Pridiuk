@@ -13,3 +13,17 @@
 // Console.WriteLine(found ? "Студент найден" : "Студент не найден");
 
 
+// int[] pointsPerLab = { 8, -1, 10, 9, -1, 7 };
+// int sum = 0;
+
+// foreach (int points in pointsPerLab)
+// {
+//     if (points < 0)
+//     {
+//         continue;
+//     }
+//     sum += points;
+// }
+// Console.WriteLine($"Сумма баллов за сданные работы: {sum}");
+
+
